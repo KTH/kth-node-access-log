@@ -1,28 +1,28 @@
+/* eslint-env mocha */
 'use strict'
 
-const test = require('tape')
+const expect = require('chai').expect
 const stripHeader = require('../../stripHeader')
 
-test('default value if not found', (assert) => {
-  const headers = {}
-  assert.equal(stripHeader(headers.referer), '-')
-  assert.end()
-})
+describe('Strip headers', () => {
+  it('should give default value if not found', () => {
+    const headers = {}
+    expect(stripHeader(headers.referer)).to.equal('-')
+  })
 
-test('found value', (assert) => {
-  const headers = {
-    referer: '//example.com'
-  }
+  it('should find value', () => {
+    const headers = {
+      referer: '//example.com'
+    }
 
-  assert.equal(stripHeader(headers.referer), '//example.com')
-  assert.end()
-})
+    expect(stripHeader(headers.referer)).to.equal('//example.com')
+  })
 
-test('found value and stripped query string', (assert) => {
-  const headers = {
-    referer: '//example.com?sample=true'
-  }
+  it('should find value and stripped query string', () => {
+    const headers = {
+      referer: '//example.com?sample=true'
+    }
 
-  assert.equal(stripHeader(headers.referer), '//example.com')
-  assert.end()
+    expect(stripHeader(headers.referer)).to.equal('//example.com')
+  })
 })

@@ -1,7 +1,6 @@
 'use strict'
 
 const morgan = require('morgan')
-const _ = require('lodash')
 
 const stripHeader = require('./stripHeader')
 
@@ -21,7 +20,7 @@ const defaults = {
  * @return {function}
  */
 module.exports = function (options) {
-  options = _.defaults(options, defaults)
+  options = Object.assign({}, defaults, options)
 
   if (!options.useAccessLog) {
     return function (req, res, next) { next() }
