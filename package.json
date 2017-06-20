@@ -1,6 +1,6 @@
 {
   "name": "kth-node-access-log",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Access log middleware for KTH node apps.",
   "main": "index.js",
   "scripts": {
