@@ -7,23 +7,28 @@
     "test": "mocha test/**/*.js",
     "codecheck": "standard",
     "preversion": "npm run codecheck && npm run test",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:KTH/kth-node-access-log.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "KTH",
+    "email": "infosys@kth.se",
+    "url": "https://github.com/KTH"
+  },
   "license": "MIT",
   "dependencies": {
-    "morgan": "^1.7.0"
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
-    "express": "^4.13.4",
-    "mocha": "^3.4.2",
-    "standard": "^7.0.1"
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "standard": "^14.3.1"
   },
   "files": [
     "index.js",
