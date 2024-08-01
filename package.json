@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@kth/eslint-config-kth": "^3.0.10",
-    "chai": "^4.3.6",
+    "chai": "^5.1.1",
     "eslint": "^8.20.0",
     "express": "^4.18.1",
     "husky": "^7.0.4",
