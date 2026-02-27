@@ -1,4 +1,4 @@
-# kth-node-access-log [![Build Status](https://travis-ci.org/kth/kth-node-access-log.svg?branch=master)](https://travis-ci.org/kth/kth-node-access-log)
+# kth-node-access-log
 
 Access log middleware for KTH node apps.
 
