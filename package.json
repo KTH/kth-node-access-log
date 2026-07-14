@@ -2,7 +2,6 @@
   "name": "kth-node-access-log",
   "version": "0.2.0",
   "description": "Access log middleware for KTH node apps.",
-  "automaticPublish": "true",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -20,6 +19,9 @@
     "url": "https://github.com/KTH"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
     "morgan": "^1.11.0"
   },
