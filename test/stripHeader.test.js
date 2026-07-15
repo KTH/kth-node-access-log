@@ -1,6 +1,6 @@
 'use strict'
 
-const stripHeader = require('../../stripHeader')
+const stripHeader = require('../stripHeader')
 
 describe('Strip headers', () => {
   it('should give default value if not found', () => {

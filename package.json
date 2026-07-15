@@ -1,17 +1,18 @@
 {
   "name": "kth-node-access-log",
   "version": "0.2.0",
-  "description": "Access log middleware for KTH node apps.",
-  "automaticPublish": "true",
+  "description": "Access log middleware for KTH Node.js apps.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --quiet",
+    "lint-v": "eslint",
     "test": "jest",
     "build": "./build.sh",
     "prepare": "husky"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KTH/kth-node-access-log.git"
+    "url": "git+ssh://git@github.com/KTH/kth-node-access-log.git"
   },
   "keywords": [],
   "author": {
@@ -20,24 +21,20 @@
     "url": "https://github.com/KTH"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
     "morgan": "^1.11.0"
   },
   "devDependencies": {
-    "@kth/eslint-config-kth": "^3.7.0",
-    "eslint": "^8.57.1",
-    "express": "^4.22.2",
+    "@kth/eslint-config-kth": "^4.1.0",
+    "eslint": "^9.39.5",
     "husky": "^9.1.7",
-    "jest": "^29.7.0",
-    "prettier": "^2.8.8",
-    "pretty-quick": "^3.3.1"
+    "jest": "^30.4.2",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.5"
   },
-  "eslintConfig": {
-    "extends": [
-      "@kth/eslint-config-kth"
-    ]
-  },
-  "// (prettier)": "configuration version 2020-06-15 - might also reside in .prettierrc.json",
   "prettier": {
     "arrowParens": "avoid",
     "printWidth": 120,
@@ -48,7 +45,7 @@
   "files": [
     "index.js",
     "stripHeader.js",
-    "find.js",
-    "strip.js"
+    "strip.js",
+    "CHANGELOG.md"
   ]
 }

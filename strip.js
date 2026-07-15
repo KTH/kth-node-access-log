@@ -6,7 +6,7 @@
  * @param {string} token
  * @return {string}
  */
-module.exports = function (value, token) {
+module.exports = function strip(value, token) {
   const index = value.indexOf(token)
 
   if (index === -1) {
