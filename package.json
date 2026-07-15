@@ -1,7 +1,7 @@
 {
   "name": "kth-node-access-log",
   "version": "0.2.0",
-  "description": "Access log middleware for KTH node apps.",
+  "description": "Access log middleware for KTH Node.js apps.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --quiet",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KTH/kth-node-access-log.git"
+    "url": "git+ssh://git@github.com/KTH/kth-node-access-log.git"
   },
   "keywords": [],
   "author": {
@@ -35,7 +35,6 @@
     "lint-staged": "^17.0.8",
     "prettier": "^3.9.5"
   },
-  "// (prettier)": "configuration version 2020-06-15 - might also reside in .prettierrc.json",
   "prettier": {
     "arrowParens": "avoid",
     "printWidth": 120,
@@ -46,7 +45,7 @@
   "files": [
     "index.js",
     "stripHeader.js",
-    "find.js",
-    "strip.js"
+    "strip.js",
+    "CHANGELOG.md"
   ]
 }
