@@ -1,6 +1,6 @@
 'use strict'
 
-const strip = require('../../strip')
+const strip = require('../strip')
 
 describe('Strip', () => {
   it('should give same output as input if token not found', () => {
