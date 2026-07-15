@@ -8,7 +8,7 @@ const strip = require('./strip')
  * @param {string} header
  * @return {string}
  */
-module.exports = function (header) {
+module.exports = function stripHeader(header) {
   const emptyValue = '-'
 
   if (typeof header !== 'string' || header === '') {

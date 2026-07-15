@@ -4,6 +4,8 @@
   "description": "Access log middleware for KTH node apps.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --quiet",
+    "lint-v": "eslint",
     "test": "jest",
     "build": "./build.sh",
     "prepare": "husky"
